@@ -10,16 +10,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="bg-dark bg-gradient  text-light m-0">
+<body class="bg-dark bg-gradient text-light m-0">
 
-  <div class="container d-flex justify-content-center align-items-center min-vh-100" >
-    <div class=" opacity-0.5 shadow  text-light rounded p-4 text-center w-50  bg-transparent bg-gradient animate__animated animate__flip" >
-      <p class="fs-1 fw-medium font-monospace animate__animated animate__fadeInDown animate__delay-1s">Welcome</p>
-      <p class="animate__animated animate__fadeInUp animate__delay-2s">This is my portfolio</p>
-      <a href="home.html" class="btn active mt-3 animate__animated animate__zoomInUp animate__delay-2s  animate__bounce animate_infinite" role="button" data-bs-toggle="button">✨Let's Go✨</a>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="bg-transparent bg-gradient opacity-75 shadow rounded p-4 text-center w-100 animate__animated animate__zoomIn">
+      <div class="d-flex justify-content-center mb-4 animate__animated animate__fadeInDown animate__delay-1s">
+        <dotlottie-wc
+          src="https://lottie.host/a7ce410a-fe16-49e5-8892-1d5fc5c8c84f/n7wbptD3gQ.lottie"
+          style="width: 300px; height: 300px;"
+          speed="1"
+          autoplay
+          loop>
+        </dotlottie-wc>
+      </div>
+      <p class="fs-2 font-monospace animate__animated animate__fadeInUp animate__delay-2s">
+        This is my Portfolio
+      </p>
+      <a href="home.html"
+         class="btn btn-outline-warning mt-3 animate__animated animate__bounceIn animate__delay-3s"
+         role="button">
+        ✨ Let's Go ✨
+      </a>
     </div>
   </div>
 
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
 </body>
 
 </html>
