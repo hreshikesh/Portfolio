@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
               sidebar.classList.remove("d-none");
               topNavbar.classList.add("d-none");
+              topNavbar.classList.add("animate_animated","animate_fadeDown")
             }
           }
 

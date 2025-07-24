@@ -1,16 +1,26 @@
-.logo{
-    opacity: 0.5;
-     transition: all 0.4s ease;
-    transform: scale(1);
-    margin: auto;
-    
+.logo {
+  opacity: 0.5;
+  transition: all 0.4s ease;
+  margin: auto;
+
 }
-.logo:hover{
-    opacity:1;
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 0 0 16px rgb(169, 169, 5);
-   
+
+.logo:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 16px rgb(169, 169, 5);
+
+}
+
+.whiteshadow {
+  box-shadow: 0 3px 20px rgb(243, 243, 111, 0.5);
+
+}
+
+.lineshadow {
+  box-shadow: 0 100px 20px rgb(71, 71, 34);
+
 }
 
 @media (max-width: 991.98px) {
@@ -19,3 +29,12 @@
   }
 }
 
+.workshadow {
+  border: 1px solid black;
+  box-shadow: 0 0 20px rgba(71, 71, 34, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.workshadow:hover {
+  border: 1px solid rgb(225, 225, 12);
+}
