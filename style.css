@@ -22,6 +22,10 @@
   box-shadow: 0 100px 20px rgb(71, 71, 34);
 
 }
+.boxshadow {
+  box-shadow: 0 0 30px rgb(225, 225, 92);
+
+}
 
 @media (max-width: 991.98px) {
   #sidebarNav {
