@@ -23,7 +23,7 @@
 
 }
 .boxshadow {
-  box-shadow: 0 0 30px rgb(225, 225, 92);
+  box-shadow: 0 0 30px rgb(128, 128, 77);
 
 }
 
@@ -42,4 +42,13 @@
 .workshadow:hover {
   border: 1px solid rgb(225, 225, 12);
 }
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 2vh;
+  font-style: normal;
+  font-size: 4vh;
+}
+
+
 
