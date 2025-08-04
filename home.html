@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-dark text-light overflow-x-hidden">
   <nav id="topNavbar" class="navbar navbar-expand-lg bg-dark  fixed-top whiteshadow" data-aos="flip-down"
     data-aos-once="false" data-aos-duration="1200" data-aos-easing="ease-in-out">
     <div class="container-fluid">
@@ -48,20 +48,19 @@
     </div>
   </nav>
 
+
   <div class="container-fluid">
     <div class="row">
       <div
-        class="col-md-3 col-lg-3 p-3 bg-dark d-flex flex-column align-items-center border border-warning border-start-0 border-end-0 d-md-block d-none "
-        id="sidebarNav" data-aos="fade-left" data-aos-once="false" data-aos-duration="1200"
-        data-aos-easing="ease-in-out" id="sidebarNav">
+        class="col-6 col-md-3 col-lg-3 p-3 bg-dark d-flex flex-column align-items-center border border-warning border-start-0 border-end-0 d-md-block overflow-hidden d-none "
+        id="sidebarNav" id="sidebarNav">
 
         <div class="text-center mb-4">
-          <img src="https://img.freepik.com/free-photo/handsome-cheerful-man-with-happy-smile_176420-18028.jpg"
-            width="200" height="200" class="rounded-circle border border-3 border-secondary opacity-50"
-            data-aos="fade-down" data-aos-once="false" alt="myimage">
+          <img src="images/pass.jpg" width="200" height="200"
+            class="rounded-circle border border-3 border-secondary opacity-50" data-aos="fade-down"
+            data-aos-once="false" alt="myimage">
         </div>
-        <!-- <hr class="my-3 border border-secondary lineshadow  opacity-50" data-aos="fade-down" data-aos-once="false"
-          data-aos-duration="1200" data-aos-easing="ease-in-out"> -->
+
         <div class="d-flex justify-content-center align-items-center m-2" data-aos="zoom-in" data-aos-duration="1200"
           data-aos-easing="ease-in-out" data-aos-once="false">
           <a href="https://github.com/hreshikesh" target="_blank" class="text-secondary fs-4  link-warning m-3"><i
@@ -73,26 +72,29 @@
           <a href="mailto:ailhreshikesh@gmail.com?subject=Let's Connect&body=Hi Hreshikesha K, I saw your portfolio!"
             target="_blank" class="text-secondary  fs-4  link-warning m-3"><i class="bi bi-envelope-fill"></i></a>
         </div>
-        <!-- <hr class="my-3 border border-secondary lineshadow  opacity-50" data-aos="fade-up" data-aos-once="false"
-          data-aos-duration="1200" data-aos-easing="ease-in-out"> -->
 
-        <ul class="nav flex-column text-center fs-5 fw-medium font-monospace mt-3">
+        <ul class="nav flex-column text-center fs-5 fw-medium font-monospace mt-2">
           <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning montserrat-alternates-light"
-              href="#home">Home</a></li>
+              href="#home" data-aos="fade-left" data-aos-once="false" data-aos-duration="1200"
+              data-aos-easing="ease-in-out">Home</a></li>
           <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning montserrat-alternates-light"
-              href="#about">About Me</a></li>
+              href="#about" data-aos="fade-left" data-aos-once="false" data-aos-duration="1200"
+              data-aos-easing="ease-in-out">About Me</a></li>
           <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning montserrat-alternates-light"
-              href="#projects">Projects</a></li>
+              href="#projects" data-aos="fade-left" data-aos-once="false" data-aos-duration="1200"
+              data-aos-easing="ease-in-out">Projects</a></li>
           <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning montserrat-alternates-light"
-              href="#resume">Resume</a></li>
+              href="#resume" data-aos="fade-left" data-aos-once="false" data-aos-duration="1200"
+              data-aos-easing="ease-in-out">Resume</a></li>
           <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning montserrat-alternates-light"
-              href="#contact">Contact</a></li>
+              href="#contact" data-aos="fade-left" data-aos-once="false" data-aos-duration="1200"
+              data-aos-easing="ease-in-out">Contact</a></li>
         </ul>
       </div>
-      <div class="col-lg-9 col-12 px-0 vh-100 border border-warning border-start-0 border-end-0 " data-aos="fade-right"
+      <div class="col-9 px-0 m-0 p-0  border border-warning border-start-0 border-end-0 " data-aos="fade-right"
         data-aos-once="false" data-aos-duration="1200" data-aos-easing="ease-in-out" id="mainContent">
         <section id="home">
-          <div class="container-fluid p-0 m-0">
+          <div class="container p-0 m-0">
             <div class="position-relative w-100 vh-100">
               <img src="images/bgimage.jpg"
                 class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25" alt="myphoto">
@@ -105,11 +107,12 @@
       </div>
       </section>
     </div>
+  </div>
 
-  </div>
-  </div>
-  </section>
-  </div>
+
+
+
+
 
   <div class="mt-3">
     <section id="about" class="p-5" data-aos="fade-up" data-aos-once="false" data-aos-duration="1200"
@@ -301,13 +304,15 @@
                   <div class=" col-sm-2 col-md-3 col-12  mb-4 cardfront" data-aos="fade-down" data-aos-easing="linear"
                     data-aos-duration="1500" data-aos-easing="ease-in-out">
                     <div class="card bg-dark h-100 shadow-sm p-2">
-                      <img src="images/bgimage.jpg" class="card-img-top" alt="...">
+                      <img src="images/login.png" class="card-img-top opacity-50" alt="...">
                       <div class="card-body">
                         <h5 class="card-title  text-warning text-gradient libertinus-sans-regular opacity-75">Login and
                           SignUp</h5>
                         <p class="card-text text-secondary opacity-50">-servlet,jsp,jdbc,bootstrap,java</p>
                         <div class="d-flex justify-content-center align-items-center">
-                          <a class="btn btn-outline-warning" role="button"><i class="bi bi-github"> </i>Link</a>
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/BMTC"><i class="bi bi-github">
+                            </i>Link</a>
                         </div>
 
                       </div>
@@ -316,12 +321,14 @@
                   <div class="col-sm-2 col-md-3 col-12  mb-4" data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="1900" data-aos-easing="ease-in-out">
                     <div class="card bg-dark  h-100 shadow-sm p-2">
-                      <img src="images/bgimage.jpg" class="card-img-top" alt="...">
+                      <img src="images/railway.png" class="card-img-top opacity-50" alt="...">
                       <div class="card-body">
                         <h5 class="card-title libertinus-sans-regular text-warning">Railway Ticket Booking</h5>
-                        <p class="card-text  text-secondary opacity-50">-servlet,jsp,jdbc,bootstrap,java</p>
+                        <p class="card-text  text-secondary opacity-50 ">-servlet,jsp,jdbc,bootstrap,java</p>
                         <div class="d-flex justify-content-center align-items-center">
-                          <a class="btn btn-outline-warning" role="button"><i class="bi bi-github"> </i>Link</a>
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/Railway%20Ticket%20Booking"><i
+                              class="bi bi-github"> </i>Link</a>
                         </div>
                       </div>
                     </div>
@@ -329,12 +336,14 @@
                   <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-down" data-aos-easing="linear"
                     data-aos-duration="1500" data-aos-easing="ease-in-out">
                     <div class="card  bg-dark h-100 shadow-sm p-2">
-                      <img src="images/bgimage.jpg" class="card-img-top" alt="...">
+                      <img src="images/bootproj.png" class="card-img-top opacity-50" alt="...">
                       <div class="card-body">
                         <h5 class="card-title text-warning libertinus-sans-regular">Online Mobile Store</h5>
-                        <p class="card-text text-secondary opacity-50">-bootstrap</p>
+                        <p class="card-text text-secondary opacity-50 ">-bootstrap</p>
                         <div class="d-flex justify-content-center align-items-center">
-                          <a class="btn btn-outline-warning" role="button"><i class="bi bi-github"> </i>Link</a>
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/WEB-TECHNOLOGY/tree/main/Website-BootStrap"><i
+                              class="bi bi-github"> </i>Link</a>
                         </div>
                       </div>
                     </div>
@@ -347,12 +356,13 @@
                   <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-down" data-aos-easing="linear"
                     data-aos-duration="1500" data-aos-easing="ease-in-out">
                     <div class="card bg-dark  h-100 shadow-sm p-2">
-                      <img src="images/bgimage.jpg" class="card-img-top" alt="...">
+                      <img src="images/portfolio.png" class="card-img-top opacity-50" alt="...">
                       <div class="card-body">
                         <h5 class="card-title text-warning libertinus-sans-regular opacity-75">Personal Portfolio</h5>
                         <p class="card-text card-text text-secondary opacity-50">-html,css,js,bootstrap</p>
                         <div class="d-flex justify-content-center align-items-center">
-                          <a class="btn btn-outline-warning" role="button"><i class="bi bi-github"> </i>Link</a>
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Portfolio"><i class="bi bi-github"> </i>Link</a>
                         </div>
                       </div>
                     </div>
@@ -361,12 +371,14 @@
                   <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="1900" data-aos-easing="ease-in-out">
                     <div class="card bg-dark  h-100 shadow-sm p-2">
-                      <img src="images/bgimage.jpg" class="card-img-top" alt="...">
+                      <img src="images/carreg.png" class="card-img-top opacity-50" alt="...">
                       <div class="card-body">
                         <h5 class="card-title text-warning libertinus-sans-regular opacity-75">Car Registration</h5>
                         <p class="card-text text-secondary opacity-50">-java,servlet,jsp,bootstrap,jdbc</p>
                         <div class="d-flex justify-content-center align-items-center">
-                          <a class="btn btn-outline-warning" role="button"><i class="bi bi-github"> </i>Link</a </div>
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/Rishi"><i class="bi bi-github">
+                            </i>Link</a </div>
                         </div>
                       </div>
                     </div>
@@ -374,13 +386,15 @@
                   <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-down" data-aos-easing="linear"
                     data-aos-duration="1500" data-aos-easing="ease-in-out">
                     <div class="card bg-dark  h-100 shadow-sm p-2">
-                      <img src="images/bgimage.jpg" class="card-img-top" alt="...">
+                      <img src="images/news.png" class="card-img-top opacity-50" alt="...">
                       <div class="card-body">
                         <h5 class="card-title text-warning libertinus-sans-regular opacity-75">News Portal Using API
                         </h5>
                         <p class="card-text text-secondary opacity-50">-servlet,js,bootstrap</p>
                         <div class="d-flex justify-content-center align-items-center">
-                          <a class="btn btn-outline-warning" role="button"><i class="bi bi-github"> </i>Link</a>
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/News"><i class="bi bi-github">
+                            </i>Link</a>
                         </div>
                       </div>
                     </div>
@@ -421,17 +435,47 @@
 
 
 
-    <section id="contact" class="p-5">
+    <!-- <section id="contact" class="p-5">
       <h2 class="text-warning ms-5 mb-4 p-3 berkshire-swash-regular fs-1">Contact Me</h2>
       <div class="container">
-        <form class="mx-auto w-50"  action="https://formspree.io/f/xjkoeynl" method="POST" >
+        <form class="mx-auto w-50" action="https://formspree.io/f/xjkoeynl" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control border-warning border-2 opacity-75 text-dark" id="name" name="name" placeholder="Enter your name">
+            <input type="text" class="form-control border-warning border-2 opacity-75 text-dark" id="name" name="name"
+              placeholder="Enter your name">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control border-warning border-2 opacity-75" name="email" id="email" placeholder="Enter your email">
+            <input type="email" class="form-control border-warning border-2 opacity-75" name="email" id="email"
+              placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control border-warning border-2 opacity-75" name="comment" id="message" rows="4"
+              placeholder="Type your message here"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-warning bg- bg-gradient">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+
+    <section id="contact" class="p-5">
+      <h2 class="text-warning ms-5 mb-4 p-3 berkshire-swash-regular fs-1">Contact Me</h2>
+      <div class="container">
+        <form class="mx-auto w-50" id="service_vc50iwa">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control border-warning border-2 opacity-75 text-dark" id="name" name="name"
+              placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control border-warning border-2 opacity-75" name="email" id="email"
+              placeholder="Enter your email">
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Your Message</label>
@@ -464,6 +508,7 @@
 
 
 
+
     <script src="home.js"></script>
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -474,6 +519,32 @@
         mirror: true,
       });
     </script>
+
+ 
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize with your EmailJS user ID (public key)
+  (function() {
+    emailjs.init("8vB42mSspBi6UVHf6"); // Get it from EmailJS dashboard
+  })();
+
+  // Handle form submission
+  window.onload = function () {
+    document.getElementById("service_vc50iwa").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_vc50iwa", "template_mtijncg", this).then(
+        function () {
+          alert("✅ Thank you! Your message has been sent.");
+          document.getElementById("service_vc50iwa").reset(); // clear form
+        },
+        function (error) {
+          alert("❌ Oops... Failed to send message.\n" + JSON.stringify(error));
+        }
+      );
+    });
+  };
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
