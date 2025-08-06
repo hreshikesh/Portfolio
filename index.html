@@ -6,35 +6,570 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hreshikesh Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Julius+Sans+One&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&family=Michroma&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+HU:wght@100..400&family=Tangerine:wght@400;700&family=UnifrakturMaguntia&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body class="bg-dark bg-gradient text-light m-0">
+<body class="bg-dark text-light overflow-x-hidden">
+  <nav id="topNavbar" class="navbar navbar-expand-lg bg-dark  fixed-top whiteshadow" data-aos="flip-down"
+    data-aos-once="false" data-aos-duration="1200" data-aos-easing="ease-in-out">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning fw-bold tangerine-bold " href="#">Hreshikesha K</a>
 
-  <div class="container d-flex justify-content-center align-items-center min-vh-100">
-    <div class="bg-transparent bg-gradient opacity-75 shadow rounded p-4 text-center w-100 animate__animated animate__zoomIn">
-      <div class="d-flex justify-content-center mb-4 animate__animated animate__fadeInDown animate__delay-1s">
-        <dotlottie-wc
-          src="https://lottie.host/a7ce410a-fe16-49e5-8892-1d5fc5c8c84f/n7wbptD3gQ.lottie"
-          style="width: 300px; height: 300px;"
-          speed="1"
-          autoplay
-          loop>
-        </dotlottie-wc>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
+        aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-2"><a class="nav-link text-light btn btn-dark montserrat-alternates-light  "
+              href="#home">Home</a></li>
+          <li class="nav-item me-2"><a class="nav-link text-light btn btn-dark montserrat-alternates-light "
+              href="#about">About</a>
+          </li>
+          <li class="nav-item me-2"><a class="nav-link text-light btn btn-dark montserrat-alternates-light"
+              href="#projects">Projects</a></li>
+          <li class="nav-item me-2"><a class="nav-link text-light btn btn-dark montserrat-alternates-light "
+              href="#resume">Resume</a>
+          </li>
+          <li class="nav-item me-2"><a class="nav-link text-light btn btn-dark montserrat-alternates-light "
+              href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      <p class="fs-2 font-monospace animate__animated animate__fadeInUp animate__delay-2s">
-        This is my Portfolio
-      </p>
-      <a href="home.html"
-         class="btn btn-outline-warning mt-3 animate__animated animate__bounceIn animate__delay-3s"
-         role="button">
-        ✨ Let's Go ✨
-      </a>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row bg-dark">
+      <div class="col-12 col-lg-3 p-3   d-flex flex-column align-items-center" id="sidebarNav" style="background-color: #2f26053a;">
+        <div class="text-center mb-4">
+          <img src="images/pass.png" width="200" height="200" class="rounded-circle border border-3 border-secondary "
+            data-aos="fade-down" alt="myimage">
+        </div>
+        <div class="d-flex justify-content-center align-items-center  mb-3" data-aos="zoom-in">
+          <a href="https://github.com/hreshikesh" target="_blank" class="text-warning fs-4 link-secondary m-2"><i
+              class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/hreshikesha-k-200689254/" target="_blank"
+            class="text-warning fs-4 link-primary m-2"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/___rishi__kesh___ail?igsh=cm02djR6ejZrZTZ4&utm_source=qr" target="_blank"
+            class="text-warning fs-4 link-danger m-2"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/917902837149?text=Hi%20Hreshikesha"
+            target="_blank" class="text-warning fs-4 link-success m-2">
+           <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+        <ul class="nav flex-column text-center fs-5 fw-medium font-monospace" data-aos="fade-left">
+          <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning" href="#home">Home</a></li>
+          <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning" href="#about">About Me</a></li>
+          <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning" href="#projects">Projects</a></li>
+          <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning" href="#resume">Resume</a></li>
+          <li class="nav-item mt-3"><a class="nav-link text-secondary link-warning" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-9 px-0" id="mainContent">
+        <section id="home">
+          <div class="container-fluid p-0">
+            <div class="position-relative w-100 min-vh-100">
+              <img src="images/bgimage.jpg"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25" alt="myphoto">
+              <div class="position-absolute top-50 start-50 translate-middle text-center px-2 px-sm-3 w-100">
+                <p class="fs-1 fs-sm-4 fs-md-3 fs-lg-2 fw-bold text-light mb-2 michroma-regular" data-aos="fade-right">
+                  Hreshikesha K
+                </p>
+                <p class="fs-2 fs-sm-5 fs-md-3 fs-lg-2 text-warning julius-sans-one-regular fw-medium"
+                  data-aos="fade-right">
+                  I'm a <span class="fw-medium fs-2 fs-sm-5 fs-md-3 fs-lg-2" id="typed"></span>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
     </div>
   </div>
 
-  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="mt-3">
+    <section id="about" class="p-5" data-aos="fade-up" data-aos-once="false" data-aos-duration="1200"
+      data-aos-easing="ease-in-out">
+      <div class="container">
+        <h2 class="text-warning mb-4 berkshire-swash-regular fs-1">About Me</h2>
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center mb-3" data-aos="fade-up"
+            data-aos-duration="18000" data-aos-once="false" data-aos-easing="ease-in-out">
+
+            <p class="lead text-center fst-italic fs-5">
+              Hi, I'm Hreshikesh — a Web Application Developer with a strong foundation in Java Full Stack technologies.
+              I
+              enjoy building clean, responsive,  Enterprise applications using HTML, CSS, JavaScript, Java, and
+              MySQL. With hands-on experience from real-time projects, I’ve developed a practical approach to
+              problem-solving and love turning ideas into functional, user-friendly solutions. I’m always excited to
+              learn, grow, and be part of teams that build software with real impact.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-once="false">
+          <h4 class="text-warning text-center text-gradient border-bottom border-warning mb-3 libertinus-sans-regular">
+            Personal Details
+          </h4>
+          <ul class="list-unstyled text-light fs-5">
+            <li class="p-2"><i class="bi bi-person-bounding-box me-2"></i><strong>Full Name:</strong> Hreshikesha
+              K</li>
+            <li class="p-2"><i class="bi bi-geo-alt-fill me-2"></i><strong>Hometown:</strong> Kasargod, Kerala
+            </li>
+            <li class="p-2"><i class="bi bi-book me-2"></i><strong>Education:</strong> BE in Computer Science And
+              Engineering</li>
+            <li class="p-2"><i class="bi bi-calendar-event me-2"></i><strong>DOB:</strong> 4th April 2004</li>
+            <li class="p-2"><i class="bi bi-translate me-2"></i><strong>Languages I Speak:</strong> English,
+              Kannada, Hindi, Tulu, Malayalam</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end" data-aos="fade-left"
+          data-aos-once="false" data-aos-duration="1200" data-aos-easing="ease-in-out">
+          <dotlottie-wc src="https://lottie.host/15f11d6d-48f2-4e74-a949-4df0f0ffb8c0/iJmbd5JkOy.lottie"
+            style="width: 300px; height: 300px" speed="1" autoplay loop>
+          </dotlottie-wc>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-5">
+        <div class="col-12" data-aos="fade-up" data-aos-once="false" data-aos-duration="1200"
+          data-aos-easing="ease-in-out">
+          <h4 class="text-warning text-center text-gradient mb-3 p-3 libertinus-sans-regular">Technologies
+          </h4>
+
+          <div class="container  border border-warning rounded-4 py-4 ">
+            <div class="row  row-cols-lg-5 g-3 justify-content-center">
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-3 bg-dark rounded text-center ">
+                  <img src="images/javalogo.png" alt="Tech Logo" class="img-fluid logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    title="OOPs, Collections, Stream, Lambda Expressions" style="height: 70px;">
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/htmllogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Tags,Structure of a Page"
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/csslogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Styling,Flex,Types OF CSS"
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/jslogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Field Validation"
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/mysqllogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="CRUD Operation"
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/bootstraplogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Navbar,GridSystem,Flex..."
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3" data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/gitlogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Git Operations"
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/tomcatlogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    title="Server Setup,Request & Response" style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/servletlogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    title="Fetch data from form,DTO,Service,Repository" style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/jdbclogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    title="CRUD Operations,DTO,Service,Repository" style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-1 bg-dark rounded text-center">
+                  <img src="images/lomboklogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Using anotations"
+                    style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/mavenlogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    title="Maven Setup,Downloading dependencies" style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3" data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-3 bg-dark rounded text-center">
+                  <img src="images/springlogo.png" alt="Tech Logo" class="img-fluid  logo" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    title="Initialization,Config,Component,Bean,Autowire..." style="height: 70px;">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3" data-aos="fade-up" data-aos-duration="1500">
+                <div class="p-2 bg-dark rounded text-center">
+                  <img src="images/jpalogo.png" alt="Tech Logo" class="img-fluid  logo " data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Persist,merge,find,remove.."
+                    style="height: 70px;">
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container bg-dark text-warning" data-aos="fade-up" data-aos-once="false" data-aos-duration="1800"
+        data-aos-easing="ease-in-out">
+        <h4
+          class="text-warning text-center text-gradient border-bottom border-warning  mt-5 mb-3 p-3 libertinus-sans-regular">
+          Work Experience
+        </h4>
+        <div class="row align-items-center text-center">
+          <div class="col-md-4 col-12 mb-4 mt-3  p-3 mx-0 ms-0 workshadow " data-aos="fade-left" data-aos-once="false"
+            data-aos-duration="1800" data-aos-easing="ease-in-out">
+            <p class="bg-secondary text-dark rounded-circle d-inline-block px-4 py-2 fs-5 fw-bold">1</p>
+            <h5 class="mt-3">Software Intern</h5>
+            <span>X-Workz</span><br>
+            <span class="fw-bold">Feb 2025 - Present</span>
+          </div>
+          <div class="col-md-4 col-12 mb-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-once="false"
+            data-aos-duration="1200" data-aos-easing="ease-in-out">
+            <dotlottie-wc src="https://lottie.host/8eac50ba-2ad9-4690-8dda-d911391745f5/aq6Hnk1kPL.lottie"
+              style="width: 100%; max-width: 400px; height: 200px;" speed="1" autoplay loop>
+            </dotlottie-wc>
+          </div>
+          <div class="col-md-4 col-12 mb-4 mt-3  p-3 mx-0 ms-0 workshadow" data-aos="fade-right" data-aos-once="false"
+            data-aos-duration="1800" data-aos-easing="ease-in-out">
+            <p class="bg-secondary text-dark rounded-circle d-inline-block px-4 py-2 fs-5 fw-bold">2</p>
+            <h5 class="mt-3">Java Intern</h5>
+            <span>Accolade Tech Solution</span><br>
+            <span class="fw-bold">Oct 2022 - Nov 2022</span>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+
+  </section>
+  
+  <div class="mt-3">
+    <section id="projects" class="p-5" data-aos="fade-up" data-aos-once="false" data-aos-duration="900"
+      data-aos-easing="ease-in-out">
+      <div class="container shadow-lg">
+        <h2 class="text-warning mb-4 p-3 berkshire-swash-regular fs-1" data-aos="fade-up" data-aos-once="false"
+          data-aos-duration="1200" data-aos-easing="ease-in-out">Projects</h2>
+        <div id="carouselExample" class="carousel slide m-2" data-bs-ride="carousel">
+          <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row text-center justify-content-center align-items-center">
+                  <div class=" col-sm-2 col-md-3 col-12  mb-4 cardfront" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500" data-aos-easing="ease-in-out">
+                    <div class="card bg-dark h-100 shadow-sm p-2">
+                      <img src="images/login.png" class="card-img-top opacity-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title  text-warning text-gradient libertinus-sans-regular opacity-75">Login and
+                          SignUp</h5>
+                        <p class="card-text text-secondary opacity-50">-servlet,jsp,jdbc,bootstrap,java</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/BMTC"><i class="bi bi-github">
+                            </i>Link</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-md-3 col-12  mb-4" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-duration="1900" data-aos-easing="ease-in-out">
+                    <div class="card bg-dark  h-100 shadow-sm p-2">
+                      <img src="images/railway.png" class="card-img-top opacity-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title libertinus-sans-regular text-warning">Railway Ticket Booking</h5>
+                        <p class="card-text  text-secondary opacity-50 ">-servlet,jsp,jdbc,bootstrap,java</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/Railway%20Ticket%20Booking"><i
+                              class="bi bi-github"> </i>Link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500" data-aos-easing="ease-in-out">
+                    <div class="card  bg-dark h-100 shadow-sm p-2">
+                      <img src="images/bootproj.png" class="card-img-top opacity-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-warning libertinus-sans-regular">Online Mobile Store</h5>
+                        <p class="card-text text-secondary opacity-50 ">-bootstrap</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/WEB-TECHNOLOGY/tree/main/Website-BootStrap"><i
+                              class="bi bi-github"> </i>Link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row text-center justify-content-center align-items-center">
+                  <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500" data-aos-easing="ease-in-out">
+                    <div class="card bg-dark  h-100 shadow-sm p-2">
+                      <img src="images/portfolio1.png" class="card-img-top opacity-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-warning libertinus-sans-regular opacity-75">Personal Portfolio</h5>
+                        <p class="card-text card-text text-secondary opacity-50">-html,css,js,bootstrap</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Portfolio"><i class="bi bi-github"> </i>Link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-duration="1900" data-aos-easing="ease-in-out">
+                    <div class="card bg-dark  h-100 shadow-sm p-2">
+                      <img src="images/carreg.png" class="card-img-top opacity-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-warning libertinus-sans-regular opacity-75">Car Registration</h5>
+                        <p class="card-text text-secondary opacity-50">-java,servlet,jsp,bootstrap,jdbc</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/Rishi"><i class="bi bi-github">
+                            </i>Link</a </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-md-3 col-12 mb-4" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500" data-aos-easing="ease-in-out">
+                    <div class="card bg-dark  h-100 shadow-sm p-2">
+                      <img src="images/news.png" class="card-img-top opacity-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-warning libertinus-sans-regular opacity-75">News Portal Using API
+                        </h5>
+                        <p class="card-text text-secondary opacity-50">-servlet,js,bootstrap</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <a class="btn btn-outline-warning" role="button"
+                            href="https://github.com/hreshikesh/Java/tree/main/News"><i class="bi bi-github">
+                            </i>Link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div>
+      <section id="resume" class="p-5 mb-5" data-aos="fade-up" data-aos-once="false" data-aos-duration="1200"
+        data-aos-easing="ease-in-out">
+        <div class="container">
+          <h2 class="text-warning mb-4 p-3 berkshire-swash-regular fs-1">Resume</h2>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="text-warning text-center boxshadow p-3 w-50 w-md-75 w-lg-50" data-aos="zoom-in"
+              data-aos-once="false" data-aos-duration="1200" data-aos-easing="ease-in-out">
+              <p class="fs-2 fs-md-3 fs-lg-2 fw-bold libertinus-sans-regular text-wrap pt-4 libertinus-sans-regular">Click Here</p>
+              <a class="btn btn-outline-warning mt-4" role="button" target="_blank"
+                href="HreshikeshaK_java_Resume.pdf">Preview</a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section id="contact" class="p-5">
+      <h2 class="text-warning ms-5 mb-4 p-3 berkshire-swash-regular fs-1" data-aos="fade-up" data-aos-once="false"
+        data-aos-duration="1200">Contact Me</h2>
+      <div class="container " data-aos="flip" data-aos-once="false" data-aos-duration="1100"
+        data-aos-easing="ease-in-out">
+        <form class="mx-auto w-50 shadow-lg p-4" id="service_vc50iwa">
+          <div class="mb-3" data-aos="zoom-in-up" data-aos-once="false" data-aos-duration="900"
+            data-aos-easing="ease-in-out">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control border-warning border-2 opacity-75 text-dark" id="name" name="name"
+              placeholder="Enter your name">
+          </div>
+          <div class="mb-3" data-aos="zoom-in-up" data-aos-once="false" data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control border-warning border-2 opacity-75" name="email" id="email"
+              placeholder="Enter your email">
+          </div>
+          <div class="mb-3" data-aos="zoom-in-up" data-aos-once="false" data-aos-duration="1100"
+            data-aos-easing="ease-in-out">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control border-warning border-2 opacity-75" name="comment" id="message" rows="4"
+              placeholder="Type your message here"></textarea>
+          </div>
+          <div class="d-grid" data-aos="zoom-in-up" data-aos-once="false" data-aos-duration="1200">
+            <button type="submit" class="btn btn-warning bg- bg-gradient">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+            <br>
+            <br>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =>
+        new bootstrap.Tooltip(tooltipTriggerEl)
+      )
+    </script>
+    <span id="typed"></span>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["DEVELOPER"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: false,
+        mirror: true,
+      });
+    </script>
+
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+
+      (function () {
+        emailjs.init("8vB42mSspBi6UVHf6");
+      })();
+
+      window.onload = function () {
+        document.getElementById("service_vc50iwa").addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_vc50iwa", "template_mtijncg", this).then(
+            function () {
+              alert("Thank you! Your message has been sent.");
+              document.getElementById("service_vc50iwa").reset();
+            },
+            function (error) {
+              alert("Oops... Failed to send message");
+            }
+          );
+          emailjs.sendForm("service_vc50iwa", "template_net0gfn", this);
+
+        });
+      };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
